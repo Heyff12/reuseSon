@@ -124,7 +124,7 @@
         }
       }
     },
-    "reuse":{
+    "reuse": {
       "projectType": "library",
       "schematics": {
         "@schematics/angular:component": {
@@ -139,7 +139,7 @@
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "tsConfig": "reuse/src/tsconfig.app.json",
-            "project":"reuse/src/ng-package.json"
+            "project": "reuse/src/ng-package.json"
           },
           "configurations": {
             "production": {
@@ -161,6 +161,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "reuseSon"
+    }
+  },
+  "defaultProject": "reuseSon",
+  "cli": {
+    "analytics": false
+  }
 }
